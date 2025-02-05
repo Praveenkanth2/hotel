@@ -1,0 +1,476 @@
+<html>
+    <head>
+        <title>Hotel ps</title>
+        <link rel="icon" type="logo.jpg-icon" href="hlo.jpg">
+        <link rel="stylesheet" type="text/css" href="hcss.css"> 
+    <style type="text/css"> 
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+     height:300px;
+     width:400px;
+     margin-left:100px;
+     margin-top:-380px;
+     font-size:30px;
+    }
+    
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 20px;
+      text-align: center;
+      font-size:40px;
+      color: cornflowerblue;
+    }
+    .mySlides p{
+        font-size:25px;
+        color: aqua;
+    }
+    
+    /* Add a blue color to the author */
+    .author {color: cornflowerblue;}
+   .author button{
+    height: 40px;
+    background-color: greenyellow;
+    width:150px;
+    border-radius:10px;}
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #888;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+    }
+    
+    /* The dot/bullet/indicator container */
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #ddd;
+        
+        margin-top:10px;
+    }
+
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      
+    }
+    
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Add an italic font style to all quotes */
+    q {font-style: italic;}
+    
+    .do h2{
+        text-align: center;
+        margin-top:50px;
+    }
+    body {
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.service {
+  border: 1px solid #ccc;
+  padding: 40px;
+}
+
+h2 {
+  margin-bottom: 0px;
+  margin-top: -180px;
+  margin-left:300px;
+ 
+}
+.service p{
+  margin-top: 30px;
+  margin-left:300px;
+}
+ .gus h1{
+  text-align: center;
+ }
+ .gus p{
+  text-align: center;
+ }
+ .gus q{
+  text-align: center;
+ }
+ .imga img{
+  margin-left:20px;
+}
+.imgb img{
+  margin-left:90px;
+  margin-top:-50px;
+}
+.imgc img{
+  margin-left:20px;
+  margin-top:10px;
+}
+.imgd img{
+  margin-left:90px;
+  margin-top: -50px;
+}
+.imge img{
+  margin-left:165px;
+  margin-top:-110px;
+}
+.imgf img{
+  margin-left:165px;
+  margin-top:-50px;
+}
+.ab img{
+    margin-left:80px;
+}
+.ba img{
+    margin-left:350px;
+    margin-top:-80px;
+}
+.cd img{
+    margin-left:590px;
+    margin-top:-80px;
+}
+.ef img{
+    margin-left:850px;
+    margin-top:-80px;
+}
+.gh img{
+    margin-left:1100px;
+    margin-top:-80px;}
+    .new h2{margin-top:-320px;
+  margin-left: 500px;
+  color: aliceblue;
+}
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top:30px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-left h3 {
+    color: #f4b400;
+    font-size:21px;
+}
+
+.footer-left p {
+    color: #ccc;
+}
+
+.footer-links {
+    width: 200px;
+}
+
+.footer-links h3 {
+    border-bottom: 2px solid #f4b400;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #f4b400;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #000;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: #f4b400;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.social_icon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-top:-50px;
+    margin-left:400px;
+}
+.social_icon ul{
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    gap: 35px;
+    list-style-type: none;
+    margin-top:-90px;
+}
+.social_icon li{
+    float: left;
+    padding-right: 5px;
+    &:hover{
+        opacity: 0.8;
+        z-index: 100000;
+        transform: scale(0.75);
+        transform: translateY(-10px);
+    }
+}
+.social_icon ul img{
+  margin-top:-130px ;
+  height:30px;
+}
+
+   </style>
+    </head>
+    <body>
+        <!--logo html st-->
+        <div class="log">
+            <img class="sky" src="hlo.jpg">
+        </div>
+        <!--log html end-->
+        <!--navigation html st-->
+        <div class="nav">
+            <ul class="menu">
+              <li><a href="index.html" >HOME</a></li>
+              <li ><a href="about.html">ABOUT</a></li>
+              <li ><a href="dining.html"  >DINING</a></li>
+              <li ><a href="ser.html" >SERVICES</a></li>
+              <li ><a href="Reservations.html"  >ROOMSS</a></li>
+              <li ><a href="gallery.html"  >GALLERY</a></li>
+              <li ><a href="conte.html" >CONTACTS</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <!--navigation html end-->
+    <!--heading st-->
+    <div class="sec" style="margin-top:100px;">
+      <img src="ab.jpg">
+      <div class="slideshow-container">
+    
+        <div class="mySlides">
+          <q>The best hotel in Coimbatore.</q>
+          <p> Make your stay..A grand way!
+            Room & Tariff Reservations
+            Affordable hotel in Gandhipuram</p>
+          
+          <p class="author"><button>book your room</button></p>
+        </div>
+        
+        <div class="mySlides">
+          <p>Affordable hotel in Gandhipuram.
+            Make your stay.. A grand way!.</p>
+          <p class="author"><button>book your room</button></p>
+        </div>
+        
+        <div class="mySlides">
+          <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+          <p class="author"><button>book your room</button></p>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </div>
+    <div class="do">
+        <h2 style="margin-left:-80px;"  >Other services @ Grand palace</h2>
+    </div>
+  <main>
+    <section class="service">
+      <img src="bh.jpg">
+      <h2>BHARATHAN PHARMACY</h2>
+      <p>Bharathan pharmacy and generals, a leading medical store with 10% discount at Gandhipuram, Tatabad</p>
+    </section>
+    <section class="service">
+      <img src="ve.jpg">
+      <h2>VENU BIRIYANI HOTEL</h2>
+      <p>Dindigul famous Venu biriyani hotel at Gandhipuram near tatabad, Coimbatore</p>
+    </section>
+    <section class="service">
+      <img src="gr.jpg">
+      <h2>GRAND FANCY STORE</h2>
+      <p>For all fancy and stationary items, toys, cosmetics under single roof at affordable price</p>
+    </section>
+    <section class="service">
+      <img src="ll.jpg">
+      <h2>BHARATHAN BOOK CENTRE</h2>
+      <p>A huge collection of all leading english and tamil books with well arranged manner</p>
+    </section>
+  </main>
+<div class="gus">
+  <h1>Our Guest Reviews</h1>
+  <p>"I love Hotel Grand Palace and would stay there as many times as I possibly can. It was fascinating! I would recommend staying here if you're interested in</p>
+<p style="text-align: center;">good food too...."</p>
+<p>Mr. Ramesh. PMR Finance, Chennai.</p>
+</div>
+<div class="ab">
+  <img src="ab1.jpg">
+</div>
+<div class="ba">
+  <img src="ab1.jpg">
+</div>
+<div class="cd">
+  <img src="ab1.jpg">
+</div>
+<div class="ef">
+  <img src="ab1.jpg">
+</div>
+<div class="gh">
+  <img src="ab1.jpg">
+</div>
+<footer>
+  <div class="footer-container">
+      <div class="footer-left">
+          <h3>The Residency Coimbatore</h3>
+          <p>49, GN Chetty Road, pk. Nagar, <br> Coimbatore, Tamil Nadu - 600017, India</p>
+      </div>
+
+      <div class="footer-links">
+          <h3>Hotels</h3>
+          <ul>
+              <li><a href="#">The Residency Towers Chennai</a></li>
+              <li><a href="#">The Residency Chennai</a></li>
+              <li><a href="#">The Residency Towers Coimbatore</a></li>
+              <li><a href="#">The Residency Towers Puducherry</a></li>
+              <li><a href="#">The Richmond Puducherry</a></li>
+              <li><a href="#">The Residency Karur</a></li>
+              <li><a href="#">The Residency Towers Rameswaram</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html" >HOME</a></li>
+            <li ><a href="about.html">ABOUT</a></li>
+            <li ><a href="dining.html"  >DINING</a></li>
+            <li ><a href="ser.html" >SERVICES</a></li>
+            <li ><a href="Reservations.html"  >ROOMSS</a></li>
+            <li ><a href="gallery.html"  >GALLERY</a></li>
+            <li ><a href="conte.html" >CONTACTS</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-links">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:resvchennai@theresidency.com">praveenpk9025@.com</a></p>
+          <p>Phone: +91 9025603984</p>
+          <p>Phone: +91 9042485767</p>
+          <p>Phone: +91 8508766297</p>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <p>&copy; 2025 itz-pk The Residency Hotels | <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a></p>
+  </div>
+</footer>
+<div class="social_icon">
+  <ul>
+    <li><a href="https://www.facebook.com/GHJ0035"><img src="face.png"></a></li>
+    <li><a href="https://x.com/GHS_Creations"><img src="what.png"></a></li>
+    <li><a href="https://www.instagram.com/girirazxx__35/"><img src="tw.png"></a></li>
+    <li><a href="https://www.linkedin.com/in/girirajdesigner"><img src="link.png"></a></li>
+    <li><a href="https://www.whatsapp.com/6383767109/"><img src="insta.png"></a></li>             
+  </ul>
+</div>
+    </body>
+    </html>

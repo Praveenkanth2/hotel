@@ -1,0 +1,32 @@
+[data-component="slideshow"] .slide {
+    display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+    display: block;
+}
+
+.animation {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: slideInFromRight 1s ease-in;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes name {
+    0% {
+        /* Styles */
+    }
+    100% {
+        /* Styles */
+    }     
+  }
