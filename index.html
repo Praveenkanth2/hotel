@@ -1,0 +1,419 @@
+<html>
+    <head>
+        <title>Hotel ps</title>
+        <link rel="icon" type="logo.jpg-icon" href="hlo.jpg">
+        <link rel="stylesheet" type="text/css" href="hcss.css"> 
+    <style type="text/css">
+         
+
+        .slider-container {
+            position: relative;
+            width: 1300px;
+            height: 500px;
+            overflow: hidden;
+            margin-top:90px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .slider {
+            display: flex;
+            width: 1300px;
+            height: 500px;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+      .pk h2{
+        text-align: center;
+        margin-top:10px;
+      }
+      .pk p{
+       align-items: center;
+      }
+      .pk h1 {margin-bottom: -20px;}
+      
+      .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+            filter: grayscale(100%); /* Make images black and white */
+            transition: filter 0.0s ease-in-out;
+        }
+
+        .gallery img:hover {
+            filter: grayscale(0%); /* Show color on hover */
+        }
+.ckn{
+    display: flex;
+    align-items: center;
+    width:1100px;
+    height:500px;
+    background-color:gainsboro;
+margin-left:100px;
+margin-top:30px;
+}
+
+    .h h1{
+        margin-top:-1200px;
+        padding:750px;
+        text-align: justify;
+        margin-left:-600px;
+    } 
+    .h p{
+        margin-top:-1500px;
+        padding:750px;
+        text-align: justify;
+        margin-left:-600px;
+    }
+    .cn{
+    display: flex;
+    align-items: center;
+    width:1100px;
+    height:400px;
+    background-color:gainsboro;
+margin-left:100px;
+margin-top:-350px;
+}
+
+    .hk h1{
+        margin-top:-1100px;
+        padding:750px;
+        text-align: justify;
+        margin-right:-600px;
+    } 
+    .hk p{
+        margin-top:-1500px;
+        padding:750px;
+        text-align: justify;
+        margin-right:-600px;
+    }
+    .shok img{
+        margin-left:100px;
+        margin-top:-50px;
+    }
+    .nt button{
+        font-size:18;
+        background-color: black;
+        color: aliceblue;
+        margin-top:-1420px;
+        margin-left:300px;
+        height:50px;
+    }
+    .tn button{
+        font-size:18;
+        background-color: black;
+        color: aliceblue;
+        margin-top:-750px;
+        margin-left:900px;
+        height:50px;
+    }
+ 
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top:-400px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-left h2 {
+    color: #f4b400;
+}
+
+.footer-left p {
+    color: #ccc;
+}
+
+.footer-links {
+    width: 200px;
+}
+
+.footer-links h3 {
+    border-bottom: 2px solid #f4b400;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #f4b400;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #000;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: #f4b400;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.social_icon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-top:-50px;
+    margin-left:400px;
+}
+.social_icon ul{
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    gap: 35px;
+    list-style-type: none;
+    margin-top:-90px;
+}
+.social_icon li{
+    float: left;
+    padding-right: 5px;
+    &:hover{
+        opacity: 0.8;
+        z-index: 100000;
+        transform: scale(0.75);
+        transform: translateY(-10px);
+    }
+}
+.social_icon ul img{
+  margin-top:-130px ;
+  height:30px;
+}
+        </style>
+    </head>
+    <body>
+        <!--logo html st-->
+        <div class="log">
+            <img class="sky" src="hlo.jpg">
+        </div>
+        <!--log html end-->
+        <!--navigation html st-->
+        <div class="nav">
+            <ul class="menu">
+    <li><a href="index.html" >HOME</a></li>
+    <li ><a href="about.html">ABOUT</a></li>
+    <li ><a href="dining.html"  >DINING</a></li>
+    <li ><a href="ser.html" >SERVICES</a></li>
+    <li ><a href="Reservations.html"  >ROOMSS</a></li>
+    <li ><a href="gallery.html"  >GALLERY</a></li>
+    <li ><a href="conte.html" >CONTACTS</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <!--navigation html end-->
+   
+    <div class="slider-container">
+        <div class="slider">
+            <img src="slia.jpg" class="slide active">
+            <img src="slib.jpg" class="slide">
+            <img src="slic.jpg" class="slide">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
+<div class="pk">
+    <h2>The best hotel in Coimbatore.</h2>
+    <p style="text-align: center; font-size:15px;">Nestled in the heart of the city, The Residency Towers, a 5-star hotel in Coimbatore, is</p>
+    <p style="text-align: center;font-size:15px;">the epitome of brilliance and splendour. Decked with fully-automated, opulent rooms</p>
+    <p style="text-align: center;font-size:15px;">suitable for corporate and leisure travellers, dining outlets and wellness offerings, our</p>
+    <p style="text-align: center;font-size:15px;">hotel proffers the best South Indian hospitality experience. A heartfelt service</p>
+    <p style="text-align: center;font-size:15px;">promised to your doorstep, The Residency Towers never shies away from aiding you to </p>
+    <p style="text-align: center;font-size:15px;">an indelible stay!</p>
+</div>
+<div class="ps" style="text-align: center;">
+    <p>Celebrated for its strategic location, our hotel is in close proximity to the city’s</p>
+    <p>international airport and railway station. It is 3.3 km from Coimbatore Main Junction</p>
+    <p>and 8.3 km from the airfield. Apart from major travel hubs, the hotel is located close to</p>
+    <p>one of the most popular shopping complexes in the city - Brookefields, at a distance of</p>
+    <p>4.3 km. Commuting from the hotel is never an issue, guests are always greeted with</p>
+    <p>frequently operating public vehicles.
+</div>
+
+<div class="gallery">
+    <img src="luxa.jpg" alt="Image 1">
+    <img src="luxb.jpg" alt="Image 2">
+    <img src="luxc.jpg" alt="Image 3">
+    <img src="luxd.jpg" alt="Image 4">
+    <img src="luxe.jpg" alt="Image 5">
+    <img src="luxaf.jpg" alt="Image 6">
+    <img src="luxg.jpg" alt="Image 7">
+</div>
+   <div class="ckn">
+    <Div class="sho">
+<img src="slic.jpg" height="400px" width="500px" style="margin-left:500px;">
+    </Div>
+   </div>
+</div>
+<div class="h">
+    <h1>Comfortable Accommodations at The Residency
+    </h1>
+    <p>Our hotel in Chennai tenders comfort and opulence to our esteemed guests. Our modern rooms and suites have been designed to meet all the requirements of their occupants. These rooms come with lavish utilities like air-conditioning, complimentary Wi-Fi, a tea and coffee maker, round-the-clock room service and impeccable laundry facilities.</p>
+</div>
+<div class="cn">
+    <Div class="shok">
+<img src="luxb.jpg" height="300px" width="450px" style="margin-right:400px;">
+    </Div>
+   </div>
+</div>
+<div class="hk">
+    <h1>Restaurants for a Royal Feast
+    </h1>
+    <p>The Residency is home to the city's most popular Indo-Chinese restaurant - Chin Chin. Providing mouth-watering dishes that celebrate the flavours of the world, our multi-cuisine restaurants and resto-bars aim to satiate your food cravings.</p>
+</div>
+<div class="tn">
+    <button type="button">Readmore</button>
+</div>
+<div class="nt">
+    <button type="button">Readmore</button>
+</div>
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(n) {
+            slides.forEach((slide) => slide.classList.remove("active"));
+            slides[n].classList.add("active");
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        // Auto-slide functionality
+        setInterval(nextSlide, 3000); // Change image every 3 seconds
+
+        // Initialize first slide
+        showSlide(index);
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2>The Residency Coimbatore</h2>
+            <p>49, GN Chetty Road, pk. Nagar, <br> Coimbatore, Tamil Nadu - 600017, India</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Hotels</h3>
+            <ul>
+                <li><a href="#">The Residency Towers Chennai</a></li>
+                <li><a href="#">The Residency Chennai</a></li>
+                <li><a href="#">The Residency Towers Coimbatore</a></li>
+                <li><a href="#">The Residency Towers Puducherry</a></li>
+                <li><a href="#">The Richmond Puducherry</a></li>
+                <li><a href="#">The Residency Karur</a></li>
+                <li><a href="#">The Residency Towers Rameswaram</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html" >HOME</a></li>
+    <li ><a href="about.html">ABOUT</a></li>
+    <li ><a href="dining.html"  >DINING</a></li>
+    <li ><a href="ser.html" >SERVICES</a></li>
+    <li ><a href="Reservations.html"  >ROOMSS</a></li>
+    <li ><a href="gallery.html"  >GALLERY</a></li>
+    <li ><a href="conte.html" >CONTACTS</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:resvchennai@theresidency.com">praveenpk9025@.com</a></p>
+            <p>Phone: +91 9025603984</p>
+            <p>Phone: +91 9042485767</p>
+            <p>Phone: +91 8508766297</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 itz-pk The Residency Hotels | <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a></p>
+    </div>
+</footer>
+<div class="social_icon">
+    <ul>
+      <li><a href="https://www.facebook.com/GHJ0035"><img src="face.png"></a></li>
+      <li><a href="https://x.com/GHS_Creations"><img src="what.png"></a></li>
+      <li><a href="https://www.instagram.com/girirazxx__35/"><img src="tw.png"></a></li>
+      <li><a href="https://www.linkedin.com/in/girirajdesigner"><img src="link.png"></a></li>
+      <li><a href="https://www.whatsapp.com/6383767109/"><img src="insta.png"></a></li>             
+    </ul>
+ </div>
+</body>
+</html>
