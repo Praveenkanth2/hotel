@@ -1,0 +1,531 @@
+<html>
+    <head>
+        <title>Hotel ps</title>
+        <link rel="icon" type="logo.jpg-icon" href="hlo.jpg">
+        <link rel="stylesheet" type="text/css" href="hcss.css"> 
+    <style type="text/css"> 
+
+/* Slideshow container */
+.slideshow-container {
+      position: relative;
+     height:300px;
+     width:400px;
+     margin-left:800px;
+     margin-top:-480px;
+     font-size:30px;
+    }
+    
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 20px;
+      text-align: center;
+      font-size:40px;
+      color: cornflowerblue;
+    }
+    .mySlides p{
+        font-size:25px;
+        color: aqua;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #888;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+    }
+    
+    /* The dot/bullet/indicator container */
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #ddd;
+        margin-left:100px;
+        margin-top:90px;
+    }
+
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      
+    }
+    
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Add an italic font style to all quotes */
+    q {font-style: italic;}
+    
+    /* Add a blue color to the author */
+    .author {color: cornflowerblue;}
+   .author button{
+    height: 40px;
+    background-color: greenyellow;
+    width:150px;
+    border-radius:10px;}
+
+    footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top:60px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-left h2 {
+    color: #f4b400;
+}
+
+.footer-left p {
+    color: #ccc;
+}
+
+.footer-links {
+    width: 200px;
+}
+
+.footer-links h3 {
+    border-bottom: 2px solid #f4b400;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #f4b400;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #000;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: #f4b400;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.social_icon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-top:-50px;
+    margin-left:400px;
+}
+.social_icon ul{
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    gap: 35px;
+    list-style-type: none;
+    margin-top:-90px;
+}
+.social_icon li{
+    float: left;
+    padding-right: 5px;
+    &:hover{
+        opacity: 0.8;
+        z-index: 100000;
+        transform: scale(0.75);
+        transform: translateY(-10px);
+    }
+}
+.social_icon ul img{
+  margin-top:-130px ;
+  height:30px;
+}
+    </style>
+    </head>
+    <body>
+        <!--logo html st-->
+        <div class="log">
+            <img class="sky" src="hlo.jpg">
+        </div>
+        <!--log html end-->
+        <!--navigation html st-->
+        <div class="nav">
+            <ul class="menu">
+              <li><a href="index.html" >HOME</a></li>
+              <li ><a href="about.html">ABOUT</a></li>
+              <li ><a href="dining.html"  >DINING</a></li>
+              <li ><a href="ser.html" >SERVICES</a></li>
+              <li ><a href="Reservations.html"  >ROOMSS</a></li>
+              <li ><a href="gallery.html"  >GALLERY</a></li>
+              <li ><a href="conte.html" >CONTACTS</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <!--navigation html end-->
+    <!--heading st-->
+    <div class="hed">
+        <img src="banner.jpg">
+        </div>
+        <div class="slideshow-container">
+    
+            <div class="mySlides">
+              <q>Welcome to Grand Palace!</q>
+              <p>Make your stay.. A grand way</p>
+              <p class="author"><button>book your room</button></p>
+            </div>
+            
+            <div class="mySlides">
+              <p>But man is not made for defeat. A man can be destroyed but not defeated.</p>
+              <p class="author"><button>book your room</button></p>
+            </div>
+            
+            <div class="mySlides">
+              <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+              <p class="author"><button>book your room</button></p>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+   <div class="blue">
+   </div>
+   <div class="line">
+    <P style="margin-top:-50px;">Centrally located with connectivity, of Railway station and Coimbatore Airport.
+    </P>
+   </div>
+   <div class="bacwi">
+    <p class="author"><button>Rooms & Tariff</button></p>
+   </div>
+   <div class="pen">
+    <img src="pen.png" style="margin-left:150px;">
+   </div>
+   <div class="penp">
+        <h3 style="margin-left:120px;">Guest Reviews</h3>
+        </div>
+    <p class="penpar">
+      Did you stay Hotel Grand Palace recently that was refreshingly good (or particularly bad)? Tell us what happened during your last hotel stay, what you liked, and what you didn't.
+    </p>
+    <div class="rec">
+      <img src="feather.png" style="margin-left:650px; margin-top:-1100px;">
+     </div>
+     <div class="rh">
+          <h3 style="margin-left:580px;margin-top:-1010px;">Why to choose us</h3>
+          </div>
+      <p class="recpar">
+        Did you stay Hotel Grand Palace recently that was (or particularly bad)? Tell us what happened during your last hotel stay, what you liked, and what you didn't.
+      </p>
+      <div class="rec">
+        <img src="star.png" style="margin-left:1060px; margin-top:-610px;">
+       </div>
+       <div class="rh">
+            <h3 style="margin-left:990px;margin-top:-535px;">Coimbatore attractions</h3>
+            </div>
+        <p class="starpar">
+          Annamalai Wildlife Sanctuary, Esha Yoga,  Kotagiri, Monkey falls, Parambikulam-Aliyar, Top slip, Ooty Lake, Vaideki Waterfalls, Valparai
+        </p>
+        <div class="head"></div>
+        <h1 style="color: darkolivegreen;text-align:center; margin-top:80px;">HOTEL GRAND PALACE COIMBATORE</h1>
+      </div>
+    </div>
+    <div id="myBtnContainer">
+      <button style="margin-left: 76%; margin-top:10px;" class="bttn active" onclick="filterSelection('all')">All</button>
+      <button class="bttn" onclick="filterSelection('nature')"> single</button>
+      <button class="bttn" onclick="filterSelection('cars')">cople </button>
+      <button class="bttn" onclick="filterSelection('people')">family </button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div style="box-sizing: border-box;" class="colum nature">
+        <div class="content">
+          <img src="luxa.jpg" alt="Mountains" style="width:80%">
+          
+        </div>
+      </div>
+  
+      <div style="box-sizing: border-box;" class="colum nature">
+        <div class="content">
+        <img src="luxb.jpg" alt="Lights" style="width:80%">
+          
+        </div>
+      </div>
+  
+      <div style="box-sizing: border-box;" class="colum nature">
+        <div class="content">
+        <img src="luxc.jpg" alt="Nature" style="width:80%">
+          
+        </div>
+      </div>
+      
+      <div style="box-sizing: border-box;" class="colum cars">
+        <div class="content">
+          <img src="luxd.jpg" alt="Car" style="width:80%"height="190px">
+          
+        </div>
+      </div>
+  
+      <div style="box-sizing: border-box;" class="colum cars">
+        <div class="content">
+        <img src="luxe.jpg" alt="Car" style="width:80%"height="190px">
+         
+        </div>
+      </div>
+  
+      <div style="box-sizing: border-box;" class="colum cars">
+        <div class="content">
+        <img src="luxaf.jpg" alt="Car" style="width:80%"">
+         
+        </div>
+      </div>
+    
+      <div style="box-sizing: border-box;" class="colum people">
+        <div class="content">
+          <img src="luxg.jpg" alt="Car" style="width:80%">
+          
+        </div>
+      </div>
+  
+      <div style="box-sizing: border-box;" class="colum people">
+        <div class="content">
+        <img src="luxh.jpg" alt="Car" style="width:80%">
+          
+        </div>
+      </div>
+  
+      <div style="box-sizing: border-box;" class="colum people">
+        <div class="content">
+        <img src="luxb.jpg" alt="Car" style="width:80%">
+          </div>
+        </div>
+      
+  
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("colum");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("bttn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        
+        </script>
+        <h1 style="color: darkolivegreen; text-align: center;font-size:40px;">VIP guests of HotelGrandPalace</h1>
+      
+      
+            <div class="card-container">
+                <div class="card">
+                    <img src="VIP1.jpg" alt="Mr. Kumari Ananthan">
+                    <div class="card-title">Mr. Kumari Ananthan<br>Tamil Nadu congress leader</div>
+                    <div class="card-text">
+                        Kumari Ananthan was a Tamil Nadu congress leader. His brother H. Vasanthakumar is an entrepreneur and a politician...
+                    </div>
+                    <a href="#" class="read-more">More Reading →</a>
+                </div>
+                <div class="card">
+                    <img src="VIP2.jpg" alt="Mr. Vikram">
+                    <div class="card-title">Mr. Vikram<br>Tamil film actor</div>
+                    <div class="card-text">
+                        Kennedy John Victor, professionally as Vikram or Chiyaan Vikram, is an Indian film actor who predominantly appears in Tamil...
+                    </div>
+                    <a href="#" class="read-more">More Reading →</a>
+                </div>
+                <div class="card">
+                    <img src="VIP3.jpg" alt="Mr. Pandu">
+                    <div class="card-title">Mr. Pandu<br>Tamil comedian actor</div>
+                    <div class="card-text">
+                        Pandu is a Tamil film actor who has appeared in comedy roles. His brother Idichapuli Selvaraj also was a film actor and comedian...
+                    </div>
+                    <a href="#" class="read-more">More Reading →</a>
+                </div>
+            </div>
+            <footer>
+              <div class="footer-container">
+                  <div class="footer-left">
+                      <h2>The Residency Coimbatore</h2>
+                      <p>49, GN Chetty Road, pk. Nagar, <br> Coimbatore, Tamil Nadu - 600017, India</p>
+                  </div>
+          
+                  <div class="footer-links">
+                      <h3>Hotels</h3>
+                      <ul>
+                          <li><a href="#">The Residency Towers Chennai</a></li>
+                          <li><a href="#">The Residency Chennai</a></li>
+                          <li><a href="#">The Residency Towers Coimbatore</a></li>
+                          <li><a href="#">The Residency Towers Puducherry</a></li>
+                          <li><a href="#">The Richmond Puducherry</a></li>
+                          <li><a href="#">The Residency Karur</a></li>
+                          <li><a href="#">The Residency Towers Rameswaram</a></li>
+                      </ul>
+                  </div>
+          
+                  <div class="footer-links">
+                      <h3>Quick Links</h3>
+                      <ul>
+                        <li><a href="index.html" >HOME</a></li>
+    <li ><a href="about.html">ABOUT</a></li>
+    <li ><a href="dining.html"  >DINING</a></li>
+    <li ><a href="ser.html" >SERVICES</a></li>
+    <li ><a href="Reservations.html"  >ROOMSS</a></li>
+    <li ><a href="gallery.html"  >GALLERY</a></li>
+    <li ><a href="conte.html" >CONTACTS</a></li>
+                      </ul>
+                  </div>
+          
+                  <div class="footer-links">
+                      <h3>Contact</h3>
+                      <p>Email: <a href="mailto:resvchennai@theresidency.com">praveenpk9025@.com</a></p>
+                      <p>Phone: +91 9025603984</p>
+                      <p>Phone: +91 9042485767</p>
+                      <p>Phone: +91 8508766297</p>
+                  </div>
+              </div>
+          
+              <div class="footer-bottom">
+                  <p>&copy; 2025 itz-pk The Residency Hotels | <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a></p>
+              </div>
+          </footer>
+          <div class="social_icon">
+              <ul>
+                <li><a href="https://www.facebook.com/GHJ0035"><img src="face.png"></a></li>
+                <li><a href="https://x.com/GHS_Creations"><img src="what.png"></a></li>
+                <li><a href="https://www.instagram.com/girirazxx__35/"><img src="tw.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/girirajdesigner"><img src="link.png"></a></li>
+                <li><a href="https://www.whatsapp.com/6383767109/"><img src="insta.png"></a></li>             
+              </ul>
+           </div>
+    </body>
+    </html> 
+
+    
